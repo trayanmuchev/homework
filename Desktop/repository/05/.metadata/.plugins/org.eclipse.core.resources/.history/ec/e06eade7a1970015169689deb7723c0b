@@ -1,0 +1,31 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class sampleFormExam1 {
+
+	public static void main(String[] args) {
+	String words = "luiza luiza trayan";
+	String[] arrWords = words.split(" ");
+	int counter = 0;
+	
+	for(int i = 0; i < arrWords.length; i++){
+		for(int j = 0; j < arrWords.length; j++){
+			if(arrWords[i].equals(arrWords[j])){
+				counter++;
+				if(i == 0 && j == 0){
+					counter = 0;
+				}
+			}
+			
+		}
+		
+	}
+	System.out.println(counter);
+			
+			
+		
+		
+
+	}
+
+}

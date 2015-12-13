@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Task_6 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String str = null;
+		System.out.println("Enter sentence: ");
+		str = input.nextLine();
+		int[] codes = new int[str.length()];
+		char ch = 0;
+
+		codes[0] = str.charAt(0) - 32;
+
+		for (int i = 1; i < str.length(); i++) {
+
+			if (str.charAt(i) == ' ') {
+				ch = str.charAt(i + 1);
+				codes[i + 1] = ch - 32;
+				ch=0;
+
+			}
+
+			if (str.charAt(i) != ch) {
+				codes[i] = str.charAt(i);
+			}
+
+		}
+
+		for (int j = 0; j < codes.length; j++) {
+			System.out.printf("%c", codes[j]);
+		}
+
+		input.close();
+
+	}
+
+}

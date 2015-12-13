@@ -1,0 +1,23 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Task_9 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter string: ");
+		String str = input.next();
+		int sum = 0;
+
+		String[] letters = str.split("\\a-z");
+		System.out.println(Arrays.toString(letters));
+		
+		
+		
+	
+		
+
+	}
+
+}

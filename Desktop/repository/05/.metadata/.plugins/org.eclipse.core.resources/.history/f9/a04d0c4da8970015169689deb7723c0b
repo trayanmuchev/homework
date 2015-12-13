@@ -1,0 +1,42 @@
+
+public class sampleFromExam2 {
+
+	public static void main(String[] args) {
+		
+		String str = "luiza luiza luiza georgieva abraamyan abraamyan";
+		String[] splitStr = str.split(" ");
+		int counter = 0;
+		int currentCount = 0;
+		int max = Integer.MIN_VALUE;
+		int index = 0;
+		
+		for(int i = 0; i < splitStr.length; i++){
+			for(int j = 0; j < splitStr.length; j++){
+				
+				if(splitStr[i].equals(splitStr[j])){
+					counter++;
+					if(i == j){
+						counter-2;
+					}
+					
+					
+				}
+				
+				
+				//index = j;
+				
+			}
+			
+			if(counter > currentCount){
+			currentCount = counter;
+			counter = 0;
+			}
+			
+			
+		}
+		
+		
+		System.out.println(/*splitStr[index] + "" +*/ currentCount);
+	}
+
+}

@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class sampleFormExam1 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		boolean flag = false;
+		int counter = 0;
+		while(true){
+			System.out.println("Enter heads or tails: ");
+			String word = input.next();
+			
+			if(word.equals("heads")){
+				flag = true;
+				counter++;
+				if(flag = false){
+					counter = 0;
+					break;
+				}
+			}
+			if(counter == 5){
+				System.out.println("5 times heads");
+			}
+			
+			if(word.equals("tails")){
+				flag = false;
+				counter++;
+				if(flag = true){
+					counter = 0;
+					break;
+				}
+			}
+			if(counter == 5){
+				System.out.println("5 times tails");
+			}
+			
+			
+		}
+
+	}
+
+}

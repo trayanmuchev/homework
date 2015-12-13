@@ -1,0 +1,41 @@
+import java.util.Scanner;
+//ne raboti!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+public class Task_10 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter string: ");
+		String str = input.next();
+		//String newStr = null;
+		int counter = 1;
+		boolean same = false;
+		char find = 0;
+		
+		for(int j = 0; j < str.length(); j++){
+			for(int e = 0; e < str.length(); e++){
+			if(str.charAt(j) == str.charAt(e)){
+				find = str.charAt(j);
+				same = true;
+				counter++;
+			}
+			}
+		}
+		
+		for(int i = 0; i < str.length(); i++){
+			
+		if(same){
+			//find = (char) ((find - 5)/counter);
+			str = str.split(find);
+			str = str.replace(str.charAt(i), (char) (str.charAt(i)+5));
+		}else{
+			str = str.replace(str.charAt(i), (char) (str.charAt(i)+5));
+		}
+		}
+		
+		System.out.println(str);
+		input.close();
+		
+	}
+
+}

@@ -1,0 +1,57 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Task_9 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter string: ");
+		String str = input.next();
+		String getResult = null;
+		int sum = 0;
+		
+		
+		for(String result:str.split("[a-z]")){
+			getResult = result;
+			System.out.println(getResult);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//String[] numbers = str.split("\\a-z");
+		//System.out.println(Arrays.toString(numbers));
+		/* for (String retval: str.split("[a-z]")){
+			result = retval;
+			 
+			 System.out.println(result);
+	      }
+		 
+		 int[] nums = new int[str.length()];
+		 for(int i = 0; i < result.length(); i++){
+			 nums[i] = result.charAt(i);
+		 }
+		 System.out.println(Arrays.toString(nums));
+		 
+		 for(int j = 0; j < nums.length; j++){
+			 sum+=nums[j];
+		 }
+		 
+		
+		 System.out.println(sum);*/
+		
+		
+		
+	
+		
+
+	}
+
+}
