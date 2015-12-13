@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Task_13 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("vavedi chislo");
+		int num = input.nextInt();
+		int br = 0;
+		int prom = num;
+		while (prom != 0) {
+			prom /= 2;
+			br++;
+		}
+		if (num < 0) {
+			br++;
+		}
+		prom = num;
+		int[] arr = new int[br];
+		int j = 0;
+		for (int i = arr.length - 1; i >= 0; i--) {
+			j = prom % 2;
+			if (j == -1) {
+				j = 1;
+			}
+			arr[i] = j;
+			prom /= 2;
+		}
+		if (num < 0) {
+			arr[0] = 0;
+		}
+
+		for (int i = 0; i < arr.length; i++)
+			System.out.print(arr[i] + " ");
+
+	}
+
+}
