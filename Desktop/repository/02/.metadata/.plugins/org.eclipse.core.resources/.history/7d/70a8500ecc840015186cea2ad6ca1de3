@@ -1,0 +1,80 @@
+import java.util.Scanner;
+
+public class Task_11 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter N: ");
+		int n = input.nextInt();
+		int copyOfN = n;
+		int copyOfN2 = n;
+		
+		for(int space = 1; space <= n; space++){
+			for(int sp = copyOfN; sp > 1; sp--){
+				System.out.print(" ");
+				
+			}
+			
+			copyOfN--;
+			
+			
+			
+			for(int star = 1; star <= space; star++){
+				for(int st = 1; st < 3; st++){
+				System.out.print("*");
+				}
+				
+				
+				
+			}
+			System.out.println();
+		}
+		
+		
+		
+		
+		
+		
+		/*for(int space = 1; space < n; space++){
+			for(int sp = copyOfN; sp > 1; sp--){
+				System.out.print(" ");
+				
+			}
+			
+			//copyOfN--;
+			
+			
+			for(int star = 1; star <= space; star++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*for (int i = 0; i < 5; i++)
+        {
+            for (int j = 5; j > i; j--)
+            {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= i + 1; k++) {
+                System.out.print(" *");
+            }
+            System.out.print("\n");
+        }*/
+	}
+
+}

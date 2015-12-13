@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class Task_11 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter N: ");
+		int n = input.nextInt();
+		
+        int N = Integer.parseInt(args[0]);
+        // Loop N times, one for each row
+        for (int i = 0; i < n; i++) {
+            // Print j periods
+            for (int j = 0; j < i; j++)
+                System.out.print(". ");
+            // Print N-i asterisks
+            for (int j = 0; j < n - i; j++)
+                System.out.print("* ");
+            // print a new line
+            System.out.println();
+        }
+		
+		
+		
+		
+		
+		
+		
+		/*int copyOfN = n;
+		
+
+		for (int space = 1; space <= n; space++) {
+			for (int sp = copyOfN; sp > 1; sp--) {
+				System.out.print(" ");
+
+			}
+
+			copyOfN--;
+
+			for (int star = 1; star <= space; star++) {
+
+				System.out.print("*");
+
+			}
+			System.out.println();
+		}*/
+
+		input.close();
+	}
+
+}

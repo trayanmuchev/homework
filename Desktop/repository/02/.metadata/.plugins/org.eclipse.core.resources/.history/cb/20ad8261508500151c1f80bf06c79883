@@ -1,0 +1,112 @@
+import java.util.Scanner;
+
+public class Task_21 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner (System.in);
+		int karta;
+		do{
+			System.out.println("vavedi karta ot 1 do 51");
+			karta=sc.nextInt();
+		}while(karta<1||karta>51);
+		int a=karta/4;
+		int b=karta%4;
+		switch(a){
+
+		case 1 : switch(b){
+		case 1 : System.out.println("dvoika spatiya");
+		case 2 :System.out.println("dvoika karo");
+		case 3 :System.out.println("dvoika kupa ");
+		case 0 :System.out.println("dvoika pika");
+			b=1;
+		}
+		case 2 : switch(b){
+		case 1 : System.out.println("troika spatiya");
+		case 2 :System.out.println("troika karo");
+		case 3 :System.out.println("troika kupa");
+		case 0 :System.out.println("troika pika");
+			b=1;
+		}
+		case 3 : switch(b){
+		case 1 : System.out.println("chetvorka spatiya");
+		case 2 :System.out.println("chetvorka karo");
+		case 3 :System.out.println("chetvorka kupa");
+		case 0 :System.out.println("chetvorka pika");
+			b=1;
+		}
+		case 4 : switch(b){
+		case 1 : System.out.println("petica spatiya");
+		case 2 :System.out.println("petica karo");
+		case 3 :System.out.println("petica kupa");
+		case 0 :System.out.println("petica pika");
+			b=1;
+		}
+		case 5 : switch(b){
+		case 1 : System.out.println("shestica spatiya");
+		case 2 :System.out.println("shestica karo");
+		case 3 :System.out.println("shestica kupa");
+		case 0 :System.out.println("shestica pika");
+			b=1;
+		}
+		case 6 : switch(b){
+		case 1 : System.out.println("sedmica spatiya");
+		case 2 :System.out.println("sedmica karo");
+		case 3 :System.out.println("sedmica kupa");
+		case 0 :System.out.println("sedmica pika");
+			b=1;System.out.println("dvoika spatiya");
+		}
+		case 7 : switch(b){
+		case 1 :System.out.println("osmica spatiya"); 
+		case 2 :System.out.println("osmica karo");
+		case 3 :System.out.println("osmica kupa");
+		case 0 :System.out.println("osmica pika");
+			b=1;
+		}
+		case 8 : switch(b){
+		case 1 : System.out.println("devyatka spatiya");
+		case 2 :System.out.println("devyatka karo");
+		case 3 :System.out.println("devyatka kupa");
+		case 0 :System.out.println("devyatla pika");
+			b=1;
+		}
+		case 9 : switch(b){
+		case 1 :System.out.println("desyatka spatiya"); 
+		case 2 :System.out.println("desyatka karo");
+		case 3 :System.out.println("desyatka kupa");
+		case 0 :System.out.println("desyatka pika");
+			b=1;
+		}
+		case 10 : switch(b){
+		case 1 : System.out.println("vale spatiya");
+		case 2 :System.out.println("vale karo");
+		case 3 :System.out.println("vale kupa");
+		case 0 :System.out.println("vale pika");
+			b=1;
+		}
+		case 11 : switch(b){
+		case 1 : System.out.println("dama spatiya");
+		case 2 :System.out.println("dama karo");
+		case 3 :System.out.println("dama kupa");
+		case 0 :System.out.println("dama pika");
+			b=1;
+		}
+		case 12 : switch(b){
+		case 1 : System.out.println("pop spatiya");
+		case 2 :System.out.println("pop karo");
+		case 3 :System.out.println("pop kupa");
+		case 0 :System.out.println("pop pika");
+			b=1;
+		}
+		case 13 : switch(b){
+		case 1 : System.out.println("aso spatiya");
+		case 2 :System.out.println("aso karo");
+		case 3 :System.out.println("aso kupa");
+		case 0 :System.out.println("aso pika");
+			b=1;
+		}
+			
+		}
+	}
+
+}

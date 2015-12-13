@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Task_17 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		int b;
+		do{
+		System.out.println("Enter b [3 ... 20]: ");
+		b = input.nextInt();
+		}while(b < 3 || b > 20);
+		
+		System.out.println("Enter symbol: ");
+		char c = input.next().charAt(0);
+		System.out.println(c);
+		
+		for(int i = 0; i < b; i++){
+			for(int e = 0; i < b; i++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		
+	}
+
+}

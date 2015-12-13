@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Task_19 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		int num;
+		do{
+		System.out.println("Enter a number [10 ... 99]: ");
+		num = input.nextInt();
+		}while(num < 10 || num > 99);
+		
+		for(int i = num; i >= 1; i--)
+		{
+			if(num % 2 != 0){
+				System.out.println((num*3)-1);
+			}
+			else{
+				if(num % 2 == 0){
+					System.out.println(num*0.5);
+				}
+			}
+		}
+	}
+
+}

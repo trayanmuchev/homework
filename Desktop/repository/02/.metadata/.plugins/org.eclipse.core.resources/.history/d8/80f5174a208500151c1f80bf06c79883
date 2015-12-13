@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Task_19 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		int num = 0;
+		int nextElement = 1;
+		int copyOfNum = num;
+		do{
+		System.out.println("Enter a number [10 ... 99]: ");
+		num = input.nextInt();
+		}while(num < 10 || num > 99);
+		
+		for(int i = copyOfNum; i >= 1; i--)
+		{
+			
+			if(i % 2 != 0){
+				copyOfNum = (i*3)+1;
+				System.out.println(copyOfNum);				
+			}
+			
+			else{
+				if(i % 2 == 0){
+					copyOfNum*=0.5;
+					System.out.println(copyOfNum);
+					
+				}
+			}
+			
+			
+			}
+		}
+	}
+
+

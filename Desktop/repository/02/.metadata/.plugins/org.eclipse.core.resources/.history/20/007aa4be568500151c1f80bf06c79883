@@ -1,0 +1,947 @@
+import java.util.Scanner;
+
+public class Task_21 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		int cardNum;
+		String colour;
+		
+		String[] mas = {"club", "diamond", "heart", "spades"};
+		String[] mas2 = {"Jack", "Queen", "Pope", "Ace"};
+		int len = mas.length-1;
+		int len2 = mas2.length-1;
+		int start = mas.length-4;
+		do {
+			System.out.println("Enter card number [1 ... 51]");
+			cardNum = input.nextInt();
+		} while (cardNum < 1 || cardNum > 51);
+
+		switch (cardNum) {
+		case 1:
+			for(int i = 2; i <= 10; i++){
+				for(int j = 0; j <= len; j++){
+			System.out.println(i + " " + mas[j]);
+				}
+				for(int e = 0; e <= len2; e++){
+					System.out.println(i + " " + mas[e]);
+				}
+			}
+			break;
+		case 2:
+			for(int i = 2; i <= 10; i++){
+				for(int j = 1; j <= len; j++){
+			System.out.println(i + " " + mas[j]);
+				}
+				for(int e = 1; e <= len2; e++){
+					System.out.println(i + " " + mas[e]);
+				}
+			}
+			break;
+		case 3:
+			for(int i = 2; i <= 10; i++){
+				for(int j = 2; j <= len; j++){
+			System.out.println(i + " " + mas[j]);
+				}
+				for(int e = 2; e <= len2; e++){
+					System.out.println(i + " " + mas[e]);
+				}
+			}
+			break;
+		case 4:
+			for(int i = 2; i <= 10; i++){
+				for(int j = 3; j <= len; j++){
+			System.out.println(i + " " + mas[j]);
+				}
+				for(int e = 3; e <= len2; e++){
+					System.out.println(i + " " + mas[e]);
+				}
+			}
+			break;
+			
+			
+			
+			case 5:
+				for(int i = 3; i <= 10; i++){
+					for(int j = 0; j <= len; j++){
+				System.out.println(i + " " + mas[j]);
+					}
+					for(int e = 0; e <= len2; e++){
+						System.out.println(i + " " + mas[e]);
+					}
+				}
+				break;
+			case 6:
+				for(int i = 3; i <= 10; i++){
+					for(int j = 1; j <= len; j++){
+				System.out.println(i + " " + mas[j]);
+					}
+					for(int e = 1; e <= len2; e++){
+						System.out.println(i + " " + mas[e]);
+					}
+				}
+				break;
+			case 7:
+				for(int i = 3; i <= 10; i++){
+					for(int j = 2; j <= len; j++){
+				System.out.println(i + " " + mas[j]);
+					}
+					for(int e = 2; e <= len2; e++){
+						System.out.println(i + " " + mas[e]);
+					}
+				}
+				break;
+			case 8:
+				for(int i = 2; i <= 10; i++){
+					for(int j = 3; j <= len; j++){
+				System.out.println(i + " " + mas[j]);
+					}
+					for(int e = 3; e <= len2; e++){
+						System.out.println(i + " " + mas[e]);
+					}
+				}
+				break;
+			
+		
+		
+		
+		
+	case 9:
+		for(int i = 4; i <= 10; i++){
+			for(int j = 0; j <= len; j++){
+		System.out.println(i + " " + mas[j]);
+			}
+			for(int e = 0; e <= len2; e++){
+				System.out.println(i + " " + mas[e]);
+			}
+		}
+		break;
+	case 10:
+		for(int i = 4; i <= 10; i++){
+			for(int j = 1; j <= len; j++){
+		System.out.println(i + " " + mas[j]);
+			}
+			for(int e = 1; e <= len2; e++){
+				System.out.println(i + " " + mas[e]);
+			}
+		}
+		break;
+	case 11:
+		for(int i = 4; i <= 10; i++){
+			for(int j = 2; j <= len; j++){
+		System.out.println(i + " " + mas[j]);
+			}
+			for(int e = 2; e <= len2; e++){
+				System.out.println(i + " " + mas[e]);
+			}
+		}
+		break;
+	case 12:
+		for(int i = 4; i <= 10; i++){
+			for(int j = 3; j <= len; j++){
+		System.out.println(i + " " + mas[j]);
+			}
+			for(int e = 3; e <= len2; e++){
+				System.out.println(i + " " + mas[e]);
+			}
+		}
+		break;
+		
+		
+		
+		case 13:
+			for(int i = 5; i <= 10; i++){
+				for(int j = 0; j <= len; j++){
+			System.out.println(i + " " + mas[j]);
+				}
+				for(int e = 0; e <= len2; e++){
+					System.out.println(i + " " + mas[e]);
+				}
+			}
+			break;
+		case 14:
+			for(int i = 5; i <= 10; i++){
+				for(int j = 1; j <= len; j++){
+			System.out.println(i + " " + mas[j]);
+				}
+				for(int e = 1; e <= len2; e++){
+					System.out.println(i + " " + mas[e]);
+				}
+			}
+			break;
+		case 15:
+			for(int i = 5; i <= 10; i++){
+				for(int j = 2; j <= len; j++){
+			System.out.println(i + " " + mas[j]);
+				}
+				for(int e = 2; e <= len2; e++){
+					System.out.println(i + " " + mas[e]);
+				}
+			}
+			break;
+		case 16:
+			for(int i = 5; i <= 10; i++){
+				for(int j = 3; j <= len; j++){
+			System.out.println(i + " " + mas[j]);
+				}
+				for(int e = 3; e <= len2; e++){
+					System.out.println(i + " " + mas[e]);
+				}
+			}
+			break;
+			
+			
+			
+			case 17:
+				for(int i = 6; i <= 10; i++){
+					for(int j = 0; j <= len; j++){
+				System.out.println(i + " " + mas[j]);
+					}
+					for(int e = 0; e <= len2; e++){
+						System.out.println(i + " " + mas[e]);
+					}
+				}
+				break;
+			case 18:
+				for(int i = 6; i <= 10; i++){
+					for(int j = 1; j <= len; j++){
+				System.out.println(i + " " + mas[j]);
+					}
+					for(int e = 1; e <= len2; e++){
+						System.out.println(i + " " + mas[e]);
+					}
+				}
+				break;
+			case 19:
+				for(int i = 6; i <= 10; i++){
+					for(int j = 2; j <= len; j++){
+				System.out.println(i + " " + mas[j]);
+					}
+					for(int e = 2; e <= len2; e++){
+						System.out.println(i + " " + mas[e]);
+					}
+				}
+				break;
+			case 20:
+				for(int i = 6; i <= 10; i++){
+					for(int j = 3; j <= len; j++){
+				System.out.println(i + " " + mas[j]);
+					}
+					for(int e = 3; e <= len2; e++){
+						System.out.println(i + " " + mas[e]);
+					}
+				}
+				break;
+			
+		
+		
+		
+		
+	case 21:
+		for(int i = 7; i <= 10; i++){
+			for(int j = 0; j <= len; j++){
+		System.out.println(i + " " + mas[j]);
+			}
+			for(int e = 0; e <= len2; e++){
+				System.out.println(i + " " + mas[e]);
+			}
+		}
+		break;
+	case 22:
+		for(int i = 7; i <= 10; i++){
+			for(int j = 1; j <= len; j++){
+		System.out.println(i + " " + mas[j]);
+			}
+			for(int e = 1; e <= len2; e++){
+				System.out.println(i + " " + mas[e]);
+			}
+		}
+		break;
+	case 23:
+		for(int i = 7; i <= 10; i++){
+			for(int j = 2; j <= len; j++){
+		System.out.println(i + " " + mas[j]);
+			}
+			for(int e = 2; e <= len2; e++){
+				System.out.println(i + " " + mas[e]);
+			}
+		}
+		break;
+	case 24:
+		for(int i = 7; i <= 10; i++){
+			for(int j = 3; j <= len; j++){
+		System.out.println(i + " " + mas[j]);
+			}
+			for(int e = 3; e <= len2; e++){
+				System.out.println(i + " " + mas[e]);
+			}
+		}
+		break;
+		
+		
+		
+		case 25:
+			for(int i = 8; i <= 10; i++){
+				for(int j = 0; j <= len; j++){
+			System.out.println(i + " " + mas[j]);
+				}
+				for(int e = 0; e <= len2; e++){
+					System.out.println(i + " " + mas[e]);
+				}
+			}
+			break;
+		case 26:
+			for(int i = 8; i <= 10; i++){
+				for(int j = 1; j <= len; j++){
+			System.out.println(i + " " + mas[j]);
+				}
+				for(int e = 1; e <= len2; e++){
+					System.out.println(i + " " + mas[e]);
+				}
+			}
+			break;
+		case 27:
+			for(int i = 8; i <= 10; i++){
+				for(int j = 2; j <= len; j++){
+			System.out.println(i + " " + mas[j]);
+				}
+				for(int e = 2; e <= len2; e++){
+					System.out.println(i + " " + mas[e]);
+				}
+			}
+			break;
+		case 28:
+			for(int i = 8; i <= 10; i++){
+				for(int j = 3; j <= len; j++){
+			System.out.println(i + " " + mas[j]);
+				}
+				for(int e = 3; e <= len2; e++){
+					System.out.println(i + " " + mas[e]);
+				}
+			}
+			break;
+			
+			
+			
+			case 29:
+				for(int i = 9; i <= 10; i++){
+					for(int j = 0; j <= len; j++){
+				System.out.println(i + " " + mas[j]);
+					}
+					for(int e = 0; e <= len2; e++){
+						System.out.println(i + " " + mas[e]);
+					}
+				}
+				break;
+			case 30:
+				for(int i = 9; i <= 10; i++){
+					for(int j = 1; j <= len; j++){
+				System.out.println(i + " " + mas[j]);
+					}
+					for(int e = 1; e <= len2; e++){
+						System.out.println(i + " " + mas[e]);
+					}
+				}
+				break;
+			case 31:
+				for(int i = 9; i <= 10; i++){
+					for(int j = 2; j <= len; j++){
+				System.out.println(i + " " + mas[j]);
+					}
+					for(int e = 2; e <= len2; e++){
+						System.out.println(i + " " + mas[e]);
+					}
+				}
+				break;
+			case 32:
+				for(int i = 9; i <= 10; i++){
+					for(int j = 3; j <= len; j++){
+				System.out.println(i + " " + mas[j]);
+					}
+					for(int e = 3; e <= len2; e++){
+						System.out.println(i + " " + mas[e]);
+					}
+				}
+				break;
+			
+		
+		
+		
+		
+	case 33:
+		for(int i = 10; i <= 10; i++){
+			for(int j = 0; j <= len; j++){
+		System.out.println(i + " " + mas[j]);
+			}
+			for(int e = 0; e <= len2; e++){
+				System.out.println(i + " " + mas[e]);
+			}
+		}
+		break;
+	case 34:
+		for(int i = 10; i <= 10; i++){
+			for(int j = 1; j <= len; j++){
+		System.out.println(i + " " + mas[j]);
+			}
+			for(int e = 1; e <= len2; e++){
+				System.out.println(i + " " + mas[e]);
+			}
+		}
+		break;
+	case 35:
+		for(int i = 10; i <= 10; i++){
+			for(int j = 2; j <= len; j++){
+		System.out.println(i + " " + mas[j]);
+			}
+			for(int e = 2; e <= len2; e++){
+				System.out.println(i + " " + mas[e]);
+			}
+		}
+		break;
+	case 36:
+		for(int i = 10; i <= 10; i++){
+			for(int j = 3; j <= len; j++){
+		System.out.println(i + " " + mas[j]);
+			}
+			for(int e = 3; e <= len2; e++){
+				System.out.println(i + " " + mas[e]);
+			}
+		}
+		break;
+		
+		
+		
+		case 37:
+			
+				for(int j = 0; j <= len; j++){
+					for(int e = 0; e <= len2; e++){
+						System.out.println(mas[j] + " " + mas[e]);
+					}
+			
+				}
+				
+			
+			break;
+		case 38:
+			for(int j = 0; j <= len; j++){
+				for(int e = 1; e <= len2; e++){
+					System.out.println(j + " " + mas[e]);
+				}
+		
+			}
+			break;
+		case 39:
+			for(int j = 0; j <= len; j++){
+				for(int e = 2; e <= len2; e++){
+					System.out.println(j + " " + mas[e]);
+				}
+		
+			}
+			break;
+		case 40:
+			for(int j = 0; j <= len; j++){
+				for(int e = 3; e <= len2; e++){
+					System.out.println(j + " " + mas[e]);
+				}
+		
+			}
+			break;
+			
+			
+			
+			case 41:
+				for(int j = 1; j <= len; j++){
+					for(int e = 0; e <= len2; e++){
+						System.out.println(j + " " + mas[e]);
+					}
+			
+				}
+				break;
+			case 42:
+				for(int j = 1; j <= len; j++){
+					for(int e = 1; e <= len2; e++){
+						System.out.println(j + " " + mas[e]);
+					}
+			
+				}
+				break;
+			case 43:
+				for(int j = 1; j <= len; j++){
+					for(int e = 2; e <= len2; e++){
+						System.out.println(j + " " + mas[e]);
+					}
+			
+				}
+				break;
+			case 44:
+				for(int j = 1; j <= len; j++){
+					for(int e = 3; e <= len2; e++){
+						System.out.println(j + " " + mas[e]);
+					}
+			
+				}
+				break;
+			
+		
+		
+		
+		
+	case 45:
+		for(int j = 2; j <= len; j++){
+			for(int e = 0; e <= len2; e++){
+				System.out.println(j + " " + mas[e]);
+			}
+	
+		}
+		break;
+	case 46:
+		for(int j = 2; j <= len; j++){
+			for(int e = 1; e <= len2; e++){
+				System.out.println(j + " " + mas[e]);
+			}
+	
+		}
+		break;
+	case 47:
+		for(int j = 2; j <= len; j++){
+			for(int e = 2; e <= len2; e++){
+				System.out.println(j + " " + mas[e]);
+			}
+	
+		}
+		break;
+	case 48:
+		for(int j = 2; j <= len; j++){
+			for(int e = 3; e <= len2; e++){
+				System.out.println(j + " " + mas[e]);
+			}
+	
+		}
+		break;
+		
+	
+	
+	
+	case 49:
+		for(int j = 3; j <= len; j++){
+			for(int e = 0; e <= len2; e++){
+				System.out.println(j + " " + mas[e]);
+			}
+	
+		}
+		break;
+		
+	case 50:
+		for(int j = 3; j <= len; j++){
+			for(int e = 1; e <= len2; e++){
+				System.out.println(j + " " + mas[e]);
+			}
+	
+		}
+		break;
+		
+	case 51:
+		for(int j = 3; j <= len; j++){
+			for(int e = 2; e <= len2; e++){
+				System.out.println(j + " " + mas[e]);
+			}
+	
+		}
+		break;
+		
+		
+		
+		
+		
+		
+		}
+		
+			
+			/*System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");*/
+			
+
+		/*case 2:
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 3:
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 4:
+			System.out.println("2" + "spades");
+
+		case 5:
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 6:
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 7:
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 8:
+			System.out.println("2" + "spades");
+
+		case 9:
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 10:
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 11:
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 12:
+			System.out.println("2" + "spades");
+
+		case 13:
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 14:
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 15:
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 16:
+			System.out.println("2" + "spades");
+
+		case 17:
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 18:
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 19:
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 20:
+			System.out.println("2" + "spades");
+
+		case 21:
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 22:
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 23:
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 24:
+			System.out.println("2" + "spades");
+
+		case 25:
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 26:
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 27:
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 28:
+			System.out.println("2" + "spades");
+
+		case 29:
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 30:
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 31:
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 32:
+			System.out.println("2" + "spades");
+
+		case 33:
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 34:
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 35:
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 36:
+			System.out.println("2" + "spades");
+
+		case 37:
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 37:
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 38:
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 39:
+			System.out.println("2" + "spades");
+
+		case 40:
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 41:
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 42:
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 43:
+			System.out.println("2" + "spades");
+
+		case 44:
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 45:
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 46:
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 47:
+			System.out.println("2" + "spades");
+
+		case 48:
+			System.out.println("2" + "club");
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 49:
+			System.out.println("2" + "diamond");
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 50:
+			System.out.println("2" + "heart");
+			System.out.println("2" + "spades");
+			break;
+
+		case 51:
+			System.out.println("2" + "spades");
+
+		}*/
+
+		/*
+		 * Scanner sc=new Scanner (System.in); int karta; do{
+		 * System.out.println("vavedi karta ot 1 do 51"); karta=sc.nextInt();
+		 * }while(karta<1||karta>51); int a=karta/4; int b=karta%4; switch(a){
+		 * 
+		 * case 1 : switch(b){ case 1 : System.out.println("dvoika spatiya");
+		 * case 2 :System.out.println("dvoika karo"); case 3
+		 * :System.out.println("dvoika kupa "); case 0 :System.out.println(
+		 * "dvoika pika"); b=1; } case 2 : switch(b){ case 1 :
+		 * System.out.println("troika spatiya"); case 2 :System.out.println(
+		 * "troika karo"); case 3 :System.out.println("troika kupa"); case 0
+		 * :System.out.println("troika pika"); b=1; } case 3 : switch(b){ case 1
+		 * : System.out.println("chetvorka spatiya"); case 2
+		 * :System.out.println("chetvorka karo"); case 3 :System.out.println(
+		 * "chetvorka kupa"); case 0 :System.out.println("chetvorka pika"); b=1;
+		 * } case 4 : switch(b){ case 1 : System.out.println("petica spatiya");
+		 * case 2 :System.out.println("petica karo"); case 3
+		 * :System.out.println("petica kupa"); case 0 :System.out.println(
+		 * "petica pika"); b=1; } case 5 : switch(b){ case 1 :
+		 * System.out.println("shestica spatiya"); case 2 :System.out.println(
+		 * "shestica karo"); case 3 :System.out.println("shestica kupa"); case 0
+		 * :System.out.println("shestica pika"); b=1; } case 6 : switch(b){ case
+		 * 1 : System.out.println("sedmica spatiya"); case 2
+		 * :System.out.println("sedmica karo"); case 3 :System.out.println(
+		 * "sedmica kupa"); case 0 :System.out.println("sedmica pika");
+		 * b=1;System.out.println("dvoika spatiya"); } case 7 : switch(b){ case
+		 * 1 :System.out.println("osmica spatiya"); case 2 :System.out.println(
+		 * "osmica karo"); case 3 :System.out.println("osmica kupa"); case 0
+		 * :System.out.println("osmica pika"); b=1; } case 8 : switch(b){ case 1
+		 * : System.out.println("devyatka spatiya"); case 2 :System.out.println(
+		 * "devyatka karo"); case 3 :System.out.println("devyatka kupa"); case 0
+		 * :System.out.println("devyatla pika"); b=1; } case 9 : switch(b){ case
+		 * 1 :System.out.println("desyatka spatiya"); case 2
+		 * :System.out.println("desyatka karo"); case 3 :System.out.println(
+		 * "desyatka kupa"); case 0 :System.out.println("desyatka pika"); b=1; }
+		 * case 10 : switch(b){ case 1 : System.out.println("vale spatiya");
+		 * case 2 :System.out.println("vale karo"); case 3 :System.out.println(
+		 * "vale kupa"); case 0 :System.out.println("vale pika"); b=1; } case 11
+		 * : switch(b){ case 1 : System.out.println("dama spatiya"); case 2
+		 * :System.out.println("dama karo"); case 3 :System.out.println(
+		 * "dama kupa"); case 0 :System.out.println("dama pika"); b=1; } case 12
+		 * : switch(b){ case 1 : System.out.println("pop spatiya"); case 2
+		 * :System.out.println("pop karo"); case 3 :System.out.println(
+		 * "pop kupa"); case 0 :System.out.println("pop pika"); b=1; } case 13 :
+		 * switch(b){ case 1 : System.out.println("aso spatiya"); case 2
+		 * :System.out.println("aso karo"); case 3 :System.out.println(
+		 * "aso kupa"); case 0 :System.out.println("aso pika"); b=1; }
+		 * 
+		 * }
+		 */
+	}
+
+}
+

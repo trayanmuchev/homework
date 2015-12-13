@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Task_8 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter n: ");
+		int n = input.nextInt();
+		
+		if(n == 1)
+		{
+			System.out.println(0);
+		}
+		
+		else{
+		for(int i = n; i <= n+1; i++){
+			
+			int first = n-1;
+			System.out.println(first);
+			
+			
+		}
+		}
+
+	}
+
+}
