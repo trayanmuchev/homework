@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class TaskTwelveYears {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter year: ");
+		int year = input.nextInt();
+		
+		System.out.println("Enter month: ");
+		int month = input.nextInt();
+		
+		System.out.println("Enter day: ");
+		int day = input.nextInt();
+		
+		int rest1 = year%10;
+		int a = year/10;
+		int rest2 = a%10;
+		
+		int nextDay = 1;
+		
+		boolean v;
+		
+		if((year%4 == 0) || ((rest1 == 0 && rest2 == 0) && year%400 == 0))
+		{
+			v = true;
+		}
+		
+		else
+		{
+			v = false;
+		}
+		
+		if (v == true)
+		{
+			if(month == 2)
+			{
+				nextDay <= 29;
+			}
+		}
+
+	}
+
+}

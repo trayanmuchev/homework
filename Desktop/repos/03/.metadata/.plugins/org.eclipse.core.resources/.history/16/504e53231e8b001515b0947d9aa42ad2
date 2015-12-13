@@ -1,0 +1,25 @@
+import java.util.Arrays;
+
+public class Task_1 {
+
+	public static void main(String[] args) {
+
+		int[] arr = { 10, 3, 5, 8, 6, -3, 7 };
+		int[] arrCopy = new int[7];
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] % 3 == 0) {
+				arrCopy[i] = arr[i];
+			}
+		}
+
+		int min = Integer.MAX_VALUE;
+		for (int j = 0; j < arrCopy.length; j++) {
+			if ((arrCopy[j] != 0) && (arrCopy[j] < min)) {
+				min = arrCopy[j];
+			}
+		}
+		System.out.println("Min element, divisible by 3 is: " + min);
+
+	}
+
+}

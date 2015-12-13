@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Task_2 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter size of the matrix: ");
+		int size = input.nextInt();
+		int [][] twoDimArr = new int[size][size];
+		
+		for(int row = 0; row < twoDimArr.length; row++){
+			for(int col = 0; col < twoDimArr[0].length; col++){
+				System.out.println("Enter [" + row + "]" + "[" + col + "]");
+				twoDimArr[row][col] = input.nextInt();
+				
+			}
+		}
+
+	}
+
+}

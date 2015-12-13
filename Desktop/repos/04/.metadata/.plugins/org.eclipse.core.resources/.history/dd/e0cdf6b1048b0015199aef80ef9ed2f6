@@ -1,0 +1,44 @@
+
+public class Task_1 {
+
+	public static void main(String[] args) {
+		
+		int[][] twoDimArray = {
+				{48, 72, 13, 14, 15},
+				{21, 22, 53, 24, 75},
+				{31, 57, 33, 34, 35},
+				{41, 95, 43, 44, 45},
+				{59, 52, 53, 54, 55},
+				{61, 69, 63, 64, 65}
+								};
+		
+		
+		int max = twoDimArray[0][0];
+		int min = twoDimArray[0][0];
+		for(int row = 1; row < twoDimArray.length; row++){
+			for(int col = 1; col < twoDimArray.length; col++){
+				
+				
+				if(twoDimArray[row][col] > max){
+					max = twoDimArray[row][col];
+				}
+	
+			}
+			
+			for(int r = 1; r < twoDimArray.length; r++){
+				for(int c = 1; c < twoDimArray.length; c++){
+					if(twoDimArray[r][c] < min){
+						min = twoDimArray[r][c];
+					}
+				}
+			}
+			
+		}
+		System.out.println("Min value: " + min);
+		System.out.println("Max value: " + max);
+		}
+		
+
+	}
+
+

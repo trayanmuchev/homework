@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class TaskTwoNumberOperations {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Enter first number: ");
+		Scanner input = new Scanner(System.in);
+		int a = input.nextInt();
+		
+		System.out.println("Enter second number: ");
+		int b = input.nextInt();
+		
+		input.close();
+		
+		int sum = a+b;
+		
+		int dif = a-b;
+		
+		int product = a*b;
+		
+		int rest = a%b;
+		
+		int divide = a/b;
+		
+		System.out.println(a + " " + "+" + " " + " " + b + " " + " = " + " " + sum);
+		System.out.println(a + " " + "-" + " " + " " + b + " " + " = " + " " + dif);
+		System.out.println(a + " " + "*" + " " + " " + b + " " + " = " + " " + product);
+		System.out.println(a + " " + "%" + " " + " " + b + " " + " = " + " " + rest);
+		System.out.println(a + " " + "/" + " " + " " + b + " " + " = " + " " + divide);
+		
+		
+		
+		
+		/*System.out.println("Enter first floating number: ");
+		Scanner sc = new Scanner(System.in);
+		int c = sc.nextInt();
+		
+		System.out.println("Enter second floating number: ");
+		int d = sc.nextInt();
+		
+		sc.close();
+		
+		
+		
+		float floatingSum = c+d;
+		
+		float floatingDif = c-d;
+		
+		float floatingProduct = c*d;
+		
+		float floatingRest = c%d;
+		
+		float floatingDivide = c/d;
+		
+		System.out.println(c + " " + "+" + " " + " " + d + " " + " = " + " " + floatingSum);
+		System.out.println(c + " " + "-" + " " + " " + d + " " + " = " + " " + floatingDif);
+		System.out.println(c + " " + "*" + " " + " " + d + " " + " = " + " " + floatingProduct);
+		System.out.println(c + " " + "%" + " " + " " + d + " " + " = " + " " + floatingRest);
+		System.out.println(c + " " + "/" + " " + " " + d + " " + " = " + " " + floatingDivide);
+*/
+	}
+
+}

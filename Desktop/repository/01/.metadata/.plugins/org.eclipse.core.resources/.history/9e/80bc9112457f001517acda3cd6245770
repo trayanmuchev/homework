@@ -1,0 +1,78 @@
+import java.util.Scanner;
+
+public class ChessBoard {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		boolean black = false;
+		boolean white = false;
+		
+		System.out.println("Enter first coordinates");
+		System.out.println("Enter row: ");
+		int row1 = input.nextInt();
+		System.out.println("Enter column: ");
+		int column1 = input.nextInt();
+		
+		System.out.println("Enter second coordinates");
+		System.out.println("Enter row: ");
+		int row2 = input.nextInt();
+		System.out.println("Enter column: ");
+		int column2 = input.nextInt();
+		
+		if(row1 == row2 && (column1-column2 == 2 || column2-column1 == 2)){
+			System.out.println("Same colours");
+		}
+		
+		if((row1 % 2 != 0 && column1 % 2 != 0) || (row1 % 2 == 0 && column1 %2 == 0))
+		{
+			black = true;
+		}
+		
+		if((row2 % 2 != 0 && column2 % 2 == 0) || (row2 % 2 == 0 && column2 %2 != 0))
+		{
+			white = true;
+		}
+		
+		if(black&&white)
+		{
+			System.out.println("Different colours");
+		}
+		
+		if(!(black&&white))
+		{
+			System.out.println("Same colours");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*for(int i = 1; i <= 8; i++)
+		{
+			for(int j = 1; j <= 7; j++)
+			{
+				System.out.println(i + "" + j);
+			}
+			
+			for(int e = 2; e <= 8; e+=2)
+			{
+				System.out.println(i + "" + e);
+			}
+		}*/
+
+	}
+
+}

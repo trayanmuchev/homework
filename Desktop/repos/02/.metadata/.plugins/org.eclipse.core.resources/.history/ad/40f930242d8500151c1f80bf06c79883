@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Task_25 {
+
+	public static void main(String[] args) {
+
+		int num;
+		int c;
+		int fact = 1;
+
+		do {
+			System.out.println("Enter number [10 ... 30000]: ");
+			Scanner input = new Scanner(System.in);
+			num = input.nextInt();
+		} while (num < 10 || num > 30000);
+
+		if (num < 0)
+			System.out.println("Negative number!");
+		else {
+			for (c = 1; c <= num; c++)
+				fact = fact * c;
+
+			System.out.println("Factorial of " + num + " is = " + fact);
+		}
+
+	}
+
+}

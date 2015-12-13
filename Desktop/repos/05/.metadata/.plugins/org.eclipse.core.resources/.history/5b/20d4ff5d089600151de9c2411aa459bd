@@ -1,0 +1,27 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Task_9 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter string: ");
+		String str = input.next();
+		int sum = 0;
+		
+		//String[] numbers = str.split("\\a-z");
+		//System.out.println(Arrays.toString(numbers));
+		 for (String retval: str.split("2")){
+	         System.out.println(retval);
+	      }
+
+		
+		
+		
+	
+		
+
+	}
+
+}

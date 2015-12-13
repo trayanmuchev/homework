@@ -1,0 +1,52 @@
+import java.util.Arrays;
+
+public class Task_9 {
+
+	public static void main(String[] args) {
+
+		String str = "bhgyth-35koutid-100wpeorcsd+1";
+		String[] symbols = str.split("[a-z0-9]");
+		String[] numbers = str.split("[a-z\\-\\+]");
+		
+		int sum = 0;
+		int counter = 0;
+
+		for (int i = 0; i < symbols.length; i++) {
+			if (symbols[i].equals("-") || symbols[i].equals("+"))
+				counter++;
+		}
+		int counter2 = 0;
+		String[] symbols2 = new String[counter];
+		for (int i = 0; i < symbols.length; i++) {
+			if (symbols[i].equals("-") || symbols[i].equals("+")) {
+				symbols2[counter2] = symbols[i];
+				counter2++;
+
+			}
+		}
+		
+
+		int counter3 = 0;
+		int[] numbers2 = new int[counter];
+		for (int i = 0; i < numbers.length; i++) {
+			if (!(numbers[i].equals(""))) {
+				numbers2[counter3] = Integer.parseInt(numbers[i]);
+				counter3++;
+
+			}
+		}
+		
+		for (int i = 0; i < counter; i++) {
+
+			if (symbols2[i].equals("-")) {
+				sum -= numbers2[i];
+			}
+			if (symbols2[i].equals("+")) {
+				sum += numbers2[i];
+			}
+		}
+		System.out.println("The sum is:" + sum);
+
+	}
+
+}

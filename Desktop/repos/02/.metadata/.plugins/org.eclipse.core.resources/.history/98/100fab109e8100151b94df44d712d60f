@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Task_10 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		int num = input.nextInt();
+		
+		boolean prime = false;
+		
+		
+		if(num == 2 || num == 1){
+			System.out.println("The number is prime.");
+		}
+		
+		else{
+		for(int i = 2; i < num; i++)
+		{
+			while(num % i == 0)
+			{
+				prime = false;
+				
+				}
+			if(num%i!=0){
+				prime = true;
+				
+			}
+			
+			if(prime == false){
+				System.out.println("The number is not prime.");
+			}
+			if(prime == true){
+				System.out.println("The number is prime.");
+			}
+			
+		
+			
+		}
+		
+	}
+		
+		
+		/*else{
+			System.out.println("The number is prime.");
+		}*/
+	}
+
+}

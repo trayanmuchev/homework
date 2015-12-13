@@ -1,0 +1,25 @@
+import java.util.Arrays;
+
+public class Task_12 {
+
+	public static void main(String[] args) {
+
+		int[] arr = { 5, 8, 10, 58, 3, 16, 95 };
+		int thirdVar = 0;
+		thirdVar = arr[0];
+		arr[0] = arr[1];
+		arr[1] = thirdVar;
+		arr[2] = arr[2] + arr[3];
+		arr[3] = arr[2] - arr[3];
+		arr[2] = arr[2] - arr[3];
+		arr[4] = arr[4] * arr[5];
+		arr[5] = arr[4] / arr[5];
+		arr[4] = arr[4] / arr[5];
+		/*for (int i = 0; i < 7; i++) {
+			System.out.print(arr[i] + " ");
+		}*/
+		System.out.println(Arrays.toString(arr));
+
+	}
+
+}

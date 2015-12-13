@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class TaskElevenNumberDel {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Enter a number without zeros: ");
+		int num = input.nextInt();
+
+		int rest1 = num % 10;
+		int a = num / 10;
+		int rest2 = a % 10;
+		int b = a / 10;
+		int rest3 = b % 10;
+
+		if (rest1 != 0 && rest2 != 0 && rest3 != 0) {
+
+			if (num % rest1 == 0) {
+				System.out.println("The number can be divided by it's third figure.");
+			}
+
+			if (num % rest2 == 0) {
+				System.out.println("The number can be divided by it's second figure.");
+			}
+
+			if (num % rest3 == 0) {
+				System.out.println("The number can be divided by it's first figure.");
+			}
+
+		}
+
+		else {
+			System.out.println("The number has zeros!");
+		}
+
+		input.close();
+
+	}
+
+}

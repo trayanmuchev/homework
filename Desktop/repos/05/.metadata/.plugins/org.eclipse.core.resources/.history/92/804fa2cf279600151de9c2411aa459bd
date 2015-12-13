@@ -1,0 +1,57 @@
+import java.util.Arrays;
+
+public class Zadacha99 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="adasdsa-10dadasd-43asdasd+6";
+		String[] znaci=str.split("[a-z0-9]");
+		String[] chisla=str.split("[a-z\\-\\+]");
+		System.out.println(Arrays.toString(znaci));
+		System.out.println(Arrays.toString(chisla));
+		int sum=0;
+		int br=0;
+		int br1=0;
+		for(int i=0;i<znaci.length;i++){
+			if(znaci[i].equals("-")||znaci[i].equals("+"))
+			br++;
+		}
+		int p=0;
+		String[] znaci2=new String[br];
+		for(int i=0;i<znaci.length;i++){
+			if(znaci[i].equals("-")||znaci[i].equals("+")){
+				znaci2[p]=znaci[i];
+				p++;
+				
+			}
+		}
+		System.out.println(Arrays.toString(znaci2));
+	/*	for(int i=0;i<znaci.length;i++){
+			if(chisla[i]!=null)
+			br1++;
+		}*/
+		int k=0;
+		String[] chisla2=new String[br];
+		for(int i=0;i<chisla.length;i++){
+			if(!(chisla[i].equals(" "))){
+				System.out.print(chisla[i]);
+				//chisla2[k]=chisla[i];
+				k++;
+				
+			}
+		}
+		System.out.println(Arrays.toString(chisla2));
+		for(int i=0;i<br;i++){
+			
+			if(znaci2[i].equals("-")){
+				//sum-=chisla2[i];
+			}
+			if(znaci2[i].equals("+")){
+				//sum+=chisla2[i];
+			}
+		}
+		System.out.println("Sumata e:"+sum);
+
+	}
+
+}

@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class TaskNineRest {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner (System.in);
+		System.out.println("Enter two numbers [10 ... 99]");
+		int a = input.nextInt();
+		int b = input.nextInt();
+		
+		int rest = (a*b)%10;
+		
+		if(rest%2 == 0)
+		{
+			System.out.println(a*b + " " + "," + rest + " " + "even");
+		}
+		
+		if(rest%2 != 0)
+		{
+			System.out.println(a*b + " " + "," + rest + " " + "uneven");
+		}
+		
+		input.close();
+	
+
+	}
+
+}

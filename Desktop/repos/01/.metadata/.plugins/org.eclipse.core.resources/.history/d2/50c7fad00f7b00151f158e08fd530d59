@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class TaskTenBucketCapacity {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter capacity of the tank [10 ... 9999]");
+		int capacity = input.nextInt();
+		
+		
+		
+		int count = 0;
+		
+		do{
+			capacity/=3;
+			count++;
+		}while(capacity>1);
+		
+		System.out.println(count + "" + "buckets of 3");
+		
+		if(capacity == 2)
+		{
+			System.out.println("and 1 bucket of 2");
+		}
+		
+		int count2 = 0;
+		
+		if(capacity > 2)
+		{
+			do
+			{
+				capacity/=2;
+				count2++;
+			}while(capacity == 1);
+			
+			System.out.println("and" + "" + count2 + "" + "buckets of 2");
+		}
+		
+		input.close();
+		
+		
+
+	}
+
+}

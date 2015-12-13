@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Task_10 {
+
+	public static void main(String[] args) {
+		
+		int[] arr = new int [7];
+		Scanner input = new Scanner(System.in);
+		for(int i = 0; i < 7; i++){
+			System.out.println("Enter [" + i + "]");
+			arr[i] = input.nextInt();
+		}
+		int same = 0;
+		
+		int sum = 0;
+		int avg = 0;
+		for(int j = 0; j < 7; j++){
+			sum+=arr[j];
+		}
+		
+		avg = sum/7;
+		
+		for(int e = 0; e < 7; e++){
+			if(arr[e] == avg){
+				same = arr[e];
+			}
+			
+			for(int r = 1; r < 10; r++){
+				if(arr[e]+r == avg){
+					same = arr[e];
+					break;
+				}
+			}
+		}
+		System.out.println(same);
+
+	}
+
+}

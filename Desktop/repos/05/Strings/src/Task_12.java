@@ -1,0 +1,23 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Task_12 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter n: ");
+		int n = input.nextInt();
+		System.out.println(Arrays.toString(returnArray(n)));
+		input.close();
+
+	}
+
+	static int[] returnArray(int n) {
+		int[] arr = new int[n];
+		for (int i = 0; i < n; i++) {
+			arr[i] = i + 1;
+		}
+		return arr;
+	}
+
+}

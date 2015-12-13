@@ -1,0 +1,40 @@
+
+public class Task_8 {
+
+	public static void main(String[] args) {
+
+		int[] arr = { 3, 3, 3, 1, 15, 15, 2, 2, 7, 7, 7, 7, 7, 7 };
+
+		int start1 = 0;
+		int start2 = 0;
+		int count1 = 0;
+		int count2 = 0;
+
+		for (int i = 0; i < arr.length - 1; i++) {
+			if (arr[i] == arr[i + 1]) {
+				count1++;
+			}
+			if (arr[i] != arr[i + 1]) {
+				if (count1 > count2) {
+					count2 = count1;
+					count1 = 0;
+					start1 = start2;
+				}
+				start2 = i + 1;
+			}
+			if (i == arr.length - 2 && arr[arr.length - 2] == arr[arr.length - 1]) {
+				if (count1 > count2) {
+					count2 = count1;
+					start1 = start2;
+				}
+			}
+
+		}
+
+		for (int i = start1; i < (start1 + count2) - 1; i++) {
+			System.out.println(arr[i]);
+		}
+
+	}
+
+}

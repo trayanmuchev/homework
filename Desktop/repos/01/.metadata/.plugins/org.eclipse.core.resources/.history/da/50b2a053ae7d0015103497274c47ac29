@@ -1,0 +1,108 @@
+import java.util.Scanner;
+
+public class TaskTwelveYears {
+
+	public static void main(String[] args) {
+
+		// 31 = qnuari1 mart3 mai5 uli7 avgust8 oktomvri10 dekemvri12
+		// 30 april4 uni6 septemvri9 noemvri11
+		int day = 0;
+		
+		
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.println("Enter year: ");
+		int year = input.nextInt();
+		
+		
+		
+		System.out.println("Enter month: ");
+		int month = input.nextInt();
+		
+
+		int rest1 = year % 10;
+		int a = year / 10;
+		int rest2 = a % 10;
+		boolean v;
+
+		if ((year % 4 == 0) || ((((rest1 == 0) && (rest2 == 0)) && (year % 400 == 0)))) {
+			v = true;
+		}
+
+		else {
+			v = false;
+		}
+
+		if (v == true) {
+			System.out.println("Leap - year! Enter a day (February: 1 - 29).");
+			day = input.nextInt();
+			if ((month == 2) && (day == 29)) {
+				System.out.println(year + "  " + (month + 1) + "  " + "1");
+			}
+
+			else {
+				if ((month == 2) && ((day < 29) && (day >= 1))) {
+					System.out.println(year + "  " + month + "  " + day + 1);
+				}
+			}
+
+		}
+
+		else {
+			if (v == false) {
+				System.out.println("Not a leap - year! Enter a day (February: 1 - 28).");
+				day = input.nextInt();
+				if ((month == 2) && (day == 28)) {
+
+					System.out.println(year + "  " + month + "  " + "1");
+
+				} else {
+					System.out.println(year + "  " + month + "  " + day + 1);
+				}
+			}
+		}
+
+		if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10) {
+			if (day == 31) {
+				System.out.println(year + "  " + (month + 1) + "  " + "1");
+			}
+
+			else {
+				if (day < 31 && day >= 1) {
+					System.out.println(year + "  " + month + "  " + (day + 1));
+				}
+			}
+		}
+
+		if (month == 4 || month == 6 || month == 9 || month == 11) {
+			if (day == 30) {
+				System.out.println(year + "  " + (month + 1) + "  " + "1");
+			}
+
+			else if (day < 30 && day >= 1) {
+				System.out.println(year + "  " + month + "  " + (day + 1));
+			}
+		}
+
+		if ((month == 12) && (day == 31)) {
+			
+				System.out.println((year + 1) + "  " + "1" + "  " + "1");
+		}
+
+			else 
+			{
+			
+				if((month == 12) && (day >= 1 || day<31))
+				{
+				System.out.println(year + "  " + month + "  " + (day + 1));
+				}
+			
+			}
+		
+
+		input.close();
+	}
+
+}

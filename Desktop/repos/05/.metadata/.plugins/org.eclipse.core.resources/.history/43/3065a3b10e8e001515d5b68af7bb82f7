@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Task_1 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter first string: ");
+		String firstStr = input.nextLine(); 
+		System.out.println("Enter second string: ");
+		String secondStr = input.nextLine();
+
+		System.out.println(firstStr.toUpperCase());
+		System.out.println(firstStr.toLowerCase());
+		System.out.println(secondStr.toUpperCase());
+		System.out.println(secondStr.toLowerCase());
+	}
+
+}

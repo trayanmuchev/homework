@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Task_6 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String str = null;
+		System.out.println("Enter sentence: ");
+	
+		str = input.next();
+		
+		
+		
+		
+		input.close();
+
+	}
+
+}
