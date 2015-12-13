@@ -1,0 +1,25 @@
+
+public class Task_5 {
+
+	public static void main(String[] args) {
+		
+		int[][] twoDimArr = { { 48, 72, 13, 14 }, { 21, 22, 53, 24 }, { 31, 57, 33, 34 },
+				{ 41, 95, 43, 44 }};
+		int sumRow = 0;
+		int maxSumRow = Integer.MIN_VALUE;
+		for (int row = 0; row < twoDimArr.length; row++) {
+			for (int col = 0; col < twoDimArr[0].length; col++) {
+				sumRow+=twoDimArr[row][col];
+				if(maxSumRow < sumRow){
+					maxSumRow = sumRow;
+					sumRow = 0;
+				}
+				
+
+			}
+
+	}
+		System.out.println(maxSumRow);
+
+}
+}

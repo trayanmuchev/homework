@@ -1,0 +1,44 @@
+import java.util.Arrays;
+//ne raboti pravilno
+//!!!!!!!!!!!!!!!!11
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+public class Task_4 {
+
+	public static void main(String[] args) {
+		
+		int[][] twoDimArr = { { 1, 2, 3 }, { 20, 52, 78 }, { 14, 8, 7 } };
+		int[][] copy = new int[3][3];
+		for (int row1 = 0, col2 = 0; (row1 < twoDimArr.length) && (col2 < twoDimArr[0].length); row1++, col2++) {
+			for (int col1 = 0, row2 = twoDimArr.length-1; (col1 < twoDimArr[0].length) && (row2 >= 0); col1++, row2--) {
+				copy[row1][col1] = twoDimArr[row2][col2];
+			}
+			
+			
+
+	}
+		System.out.println(Arrays.deepToString(copy));
+		
+		/*int[][] darray = new int[][] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		int[][] naDvGr = new int[3][3];
+		for (int i = 0; i < darray.length; i++) {
+			int red = 0;
+			int kol = darray.length - 1 - i;
+			for (int k = 0; k < darray.length; k++) {
+				naDvGr[red][kol] = darray[i][k];
+				red++;
+
+			}
+		}
+		for (int i = 0; i < naDvGr.length; i++) {
+			for (int k = 0; k < naDvGr[0].length; k++) {
+				System.out.print(naDvGr[i][k]);
+			}
+			System.out.println();
+		}*/
+
+}
+	
+}
+
